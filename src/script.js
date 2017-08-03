@@ -1,23 +1,30 @@
 $(document).ready(() => {
   $("body").mousemove(event => {
-    var x = event.pageX;
-    var y = event.pageY;
-    var centerx = $(window).width() / 2;
-    var centery = $(window).height() / 2;
+    const x = event.pageX;
+    const y = event.pageY;
 
-    var dx = x - centerx;
-    var dy = y - centery;
+    const center = $('#joystick-handle').offset();
 
-    var dist = Math.sqrt(dx*dx + dy*dy);
-    var transDist = (dist * 7) / centerx;
-    var circleDist = (dist * 45) / centerx;
+    const centerx = center.left;
+    const centery = center.top;
 
-    var angle = Math.atan2(dy, dx);
-    var adj = circleDist * Math.cos(angle);
-    var opp = circleDist * Math.sin(angle);
+    // const centerx = $(window).width() / 2;
+    // const centery = $(window).height() / 2;
 
-    var trans = `translateX(-50%) translateY(-50%) rotateX(${-opp}deg) rotateY(${adj}deg) translateZ(10em)`;
-    var transObj = {webkitTransform: trans, msTransform: trans, mozTransform: trans, transform: trans};
-    console.log($('#joystick-head').css(transObj));
+
+    const dx = x - centerx;
+    const dy = y - centery;
+
+    const dist = Math.sqrt(dx*dx + dy*dy);
+    const transDist = Math.min((dist * 7) / (centerx / 2), 45);
+    const circleDist = Math.min((dist * 45) / (centerx / 2), 45);
+
+    const angle = Math.atan2(dy, dx);
+    const adj = circleDist * Math.cos(angle);
+    const opp = circleDist * Math.sin(angle);
+
+    const trans = `translateX(-50%) translateY(-50%) rotateX(${-opp}deg) rotateY(${adj}deg) translateZ(10em)`;
+    const transObj = {webkitTransform: trans, msTransform: trans, mozTransform: trans, transform: trans};
+    $('#joystick-head').css(transObj);
   });
 });

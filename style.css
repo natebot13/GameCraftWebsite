@@ -1,21 +1,39 @@
 html, body {
   height: 100%;
   width: 100%;
+  font-size: 16px;
 }
 
 .main-content {
+  position: relative;
   min-height: 100%;
   width: 100%;
 }
 
+#controller {
+  position: absolute;
+  margin-left: -11em;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 44rem;
+  height: 22rem;
+  border: 2.5rem solid #373737;
+  border-radius: 11rem;
+  background-color: #fff;
+}
+
 #joystick-body {
-  vertical-align: center;
-  text-align: center;
-  position: relative;
-  border-radius: 10em;
-  width: 15em;
-  height: 15em;
-  background-color: #777;
+  position: absolute;
+  margin-left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  /*border: 2px solid #555  ;*/
+  border-radius: 10rem;
+  width: 15rem;
+  height: 15rem;
+  /*background-image: radial-gradient(circle, #333, #777);*/
+  background-color: #aaa;
 }
 
 #joystick-handle {
@@ -26,9 +44,68 @@ html, body {
 
 #joystick-head {
   position: absolute;
-  background-color: #555;
-  border-radius: 14em;
-  width: 10em;
-  height: 10em;
-  transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(0deg) translateZ(7em);
+  /*background-color: #555;*/
+  background-image: radial-gradient(circle, #777, #666);
+  border-radius: 14rem;
+  width: 10rem;
+  height: 10rem;
+  transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(0deg) translateZ(7rem);
+}
+
+#buttons {
+  position: absolute;
+  margin-left: 23rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10rem;
+  width: 15rem;
+  height: 15rem;
+  /*background-image: radial-gradient(circle, #aaa, #eee);*/
+}
+
+.button {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #000;
+}
+
+.button span {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#a-button {
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  background-color: #fced0a;
+}
+
+#b-button {
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f23331;
+}
+
+#x-button {
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3fcc00;
+}
+
+#y-button {
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  background-color: #0e75ed;
 }

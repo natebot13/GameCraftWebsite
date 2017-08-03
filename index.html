@@ -1,15 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="main-content row align-items-center justify-content-center">
-      <div class="col col-1">
+    <div class="main-content">
+      <div id="controller">
         <div id="joystick-body">
           <div id="joystick-handle">
             <div id="joystick-head"></div>
           </div>
+        </div>
+        <div id="buttons">
+          <div class="button" id="a-button"><span></span></div>
+          <div class="button" id="b-button"><span></span></div>
+          <div class="button" id="x-button"><span></span></div>
+          <div class="button" id="y-button"><span></span></div>
         </div>
       </div>
     </div>
