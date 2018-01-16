@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Quicksand|Saira+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="main-content">
-      <div id="controller">
-        <div id="joystick-body">
-          <div id="joystick-handle">
-            <div id="joystick-head"></div>
+    <div class="background home"></div>
+    <button class="btn btn-hamburger" id="side-menu-toggler">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+    <div class="side-menu hidden" id="side-menu">
+      <nav class="nav flex-column text-center">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="events.html">Events</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="members.html">Members</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="main-content container-fluid">
+      <div class="row align-items-center" id="title-row">
+        <div class="col col-7">
+          <div class="text-center">
+            <h1 id="title">GameCraft</h1>
+            <h1 id="sub-title"><span class="highlight">@</span> Berkeley</h1>
+            <h2 id="desc"> UC Berkeley's game development club </h2>
+            <a href="events.html" class="btn btn-outline-primary btn-events"> Events </a>
           </div>
         </div>
-        <div id="buttons">
-          <div class="button" id="a-button"><span></span></div>
-          <div class="button" id="b-button"><span></span></div>
-          <div class="button" id="x-button"><span></span></div>
-          <div class="button" id="y-button"><span></span></div>
+      </div>
+      <div class="ocf">
+        We are a student group acting independently of the University of California. We take full responsibility for our organization and this web site.
+        <a href="https://www.ocf.berkeley.edu">
+            <img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin.svg" alt="Hosted by the OCF" style="border: 0;" />
+        </a>
+      </div>
+
+      <div id="controller-box">
+        <div id="controller">
+          <div id="joystick-body">
+            <div id="joystick-handle">
+              <div id="joystick-head"></div>
+            </div>
+          </div>
+          <div id="buttons">
+            <div class="button" id="a-button"><span></span></div>
+            <div class="button" id="b-button"><span></span></div>
+            <div class="button" id="x-button"><span></span></div>
+            <div class="button" id="y-button"><span></span></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lib/joystick.js"></script>
     <script type="text/javascript" src="lib/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+Game links
+Info page:
+  - who
+  - where
+  - why
+events --Prety good to go
+ - future
+ - past
+projects --Needs to be filled in
+ - ongoing
+ - complete
+team
+contact --Can add more easily
