@@ -19,7 +19,11 @@
 }
 
 :root {
-  --main-color: #5ff4e5;
+  --main-color: #5dd7d9;
+  --events-color: #ff77d1;
+  --projects-color: #edea63;
+  --members-color: #58d885;
+  --contact-color: #f7ba4a;
 }
 
 html, body {
@@ -41,9 +45,27 @@ html, body {
   z-index: -1;
 }
 
-.background.events {
-  filter: hue-rotate(75deg);
+.background.home {
+  filter: hue-rotate(-25deg) brightness(120%);
 }
+
+.background.events {
+  filter: hue-rotate(120deg) brightness(110%);
+}
+
+.background.projects {
+  filter: hue-rotate(-135deg) brightness(120%);
+}
+
+
+.background.members {
+  filter: hue-rotate(-60deg) brightness(120%);
+}
+
+.background.contact {
+  filter: hue-rotate(180deg) brightness(130%);
+}
+
 
 .bar1, .bar2, .bar3 {
   width: 35px;
@@ -111,12 +133,12 @@ html, body {
 }
 
 .side-menu .nav-link:hover {
-  background-color: #85f7eb;
+  background-color: var(--main-color);
   color: black;
 }
 
 .nav-link.active {
-  background-color: #85f7eb;
+  background-color: var(--main-color);
   color: black;
 }
 
@@ -347,7 +369,7 @@ html, body {
   width: 4rem;
   height: 5rem;
   text-align: center;
-  background-color: #85f7eb;
+  background-color: var(--events-color);
   z-index: 2;
   color: black;
 }
@@ -482,21 +504,31 @@ html, body {
 
 }
 
-.profile .card-img-top#profile1 {
-  background-image: url("images/nathan.jpg");
+/*PICTURES OF CLUB MEMBERS GO HERE*/
 
+.profile .card-img-top#profile1 {
+  background-image: url("images/gamecraft.png");
 }
+
+.profile .card-img-top#profile2 {
+  background-image: url("images/nathan.jpg");
+}
+
+/*--*/
 
 .profile .card-title {
   padding-top: 1rem;
   font-family: DisposableDroid, sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .profile .card-text {
   font-family: "saira condensed", sans-serif;
   font-size: 1.5rem;
+  font-weight: 550;
+  letter-spacing: 0.05rem;
+  color: var(--members-color);
 }
 
 /****CONTACT STYLING****/
