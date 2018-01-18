@@ -1,0 +1,46 @@
+/* Calendar styling */
+
+table#calendar {
+    border: 1px solid #eee;
+    margin: auto;
+    font-size: 14px;
+    width: 100%;
+    background-color: white;
+}
+table#calendar td {
+    padding: 5px;
+    margin: 4px;
+    border: 1px solid #ccc;
+}
+table#calendar .td-left {
+    text-align: left;
+}
+table#calendar th {
+    padding: 5px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: normal;
+}
+table#calendar .proj1 {
+    background-color: #c4e6ff;
+}
+table#calendar .proj2 {
+    background-color: #cbe9b0;
+}
+table#calendar .proj3 {
+    background-color: #ffe4b4;
+}
+table#calendar .gray-bg {
+    background: #eee;
+}
+table#calendar tr th:nth-child(2) {
+    width: 60px;
+}
+table#calendar tr th:nth-child(4) {
+    text-align: left;
+}
+table#calendar tr:not(:first-child):hover td:not(.weeknum) {
+    background: #ffffd8;
+}
