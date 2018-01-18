@@ -22,6 +22,7 @@
   --main-color: #5dd7d9;
   --events-color: #ff77d1;
   --projects-color: #edea63;
+  --decal-color: #4757ed;
   --members-color: #58d885;
   --contact-color: #f7ba4a;
 }
@@ -31,6 +32,7 @@ html, body {
   width: 100%;
   font-size: 12px;
   overflow-x: hidden;
+  font-family: "saira condensed", sans-serif;
 }
 
 @media (max-width: 992px) {
@@ -63,6 +65,9 @@ html, body {
   filter: hue-rotate(-135deg) brightness(120%);
 }
 
+.background.decal {
+  filter: hue-rotate(30deg);
+}
 
 .background.members {
   filter: hue-rotate(-60deg) brightness(120%);
@@ -509,6 +514,67 @@ html, body {
 
 .cover .r {
   transform: translateX(-100%);
+}
+
+/****DECAL STYLING****/
+
+.facilitator {
+  width: 30rem;
+  margin-top: 1rem;
+}
+
+.facilitator .card-img-top {
+  height:17rem;
+  background-size: 100% auto;
+  background-position: 0% 20%;
+  background-repeat: no-repeat;
+
+}
+
+/*PICTURES OF FACILITATORS GO HERE*/
+
+.facilitator .card-img-top#profile1 {
+  background-image: url("images/sabrina.jpg");
+}
+
+.facilitator .card-img-top#profile2 {
+  background-image: url("images/adam.jpg");
+}
+
+.facilitator .card-img-top#profile3 {
+  background-image: url("images/jennifer.jpg");
+}
+
+.facilitator .card-img-top#profile4 {
+  background-image: url("images/kevin.jpg");
+}
+
+.facilitator .card-img-top#profile5 {
+  background-image: url("images/gabby.jpg");
+}
+
+.facilitator .card-img-top#profile6 {
+  background-image: url("images/wesley.jpg");
+}
+
+.facilitator .card-img-top#profile7 {
+  background-image: url("images/nathan.jpg");
+}
+/*--*/
+
+.facilitator .card-title {
+  padding-top: 0.5rem;
+  font-family: DisposableDroid, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.facilitator .card-text {
+  font-family: "saira condensed", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 550;
+  letter-spacing: 0.05rem;
+  color: var(--decal-color);
 }
 
 /****MEMBERS STYLING****/
