@@ -577,6 +577,20 @@ html, body {
   color: var(--decal-color);
 }
 
+/****CHOOSE A LAB****/
+
+.lab .card-body .card-title {
+  font-family: "DisposableDroid";
+  font-size: 2.5rem;
+}
+
+.lab .card-text {
+  font-size: 1.5rem;
+  font-family: "saira condensed", sans-serif;
+}
+
+/********************/
+
 /****MEMBERS STYLING****/
 
 .profile {
