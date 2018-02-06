@@ -525,7 +525,7 @@ html, body {
 
 .facilitator .card-img-top {
   height:17rem;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: 0% 20%;
   background-repeat: no-repeat;
 
@@ -560,6 +560,10 @@ html, body {
 .facilitator .card-img-top#profile7 {
   background-image: url("images/nathan.jpg");
 }
+
+.facilitator .card-img-top#profile8 {
+  background-image: url("images/darren.jpg");
+}
 /*--*/
 
 .facilitator .card-title {
@@ -587,6 +591,19 @@ html, body {
 .lab .card-text {
   font-size: 1.5rem;
   font-family: "saira condensed", sans-serif;
+}
+
+.lab .badge {
+  font-family: "DisposableDroid";
+  font-size: 1.8rem;
+}
+
+.lab img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: pixelated;
 }
 
 /********************/
