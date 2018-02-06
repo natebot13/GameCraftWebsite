@@ -384,6 +384,7 @@ html, body {
 
 .event-row {
   position: relative;
+  display: table;
   left: 50%;
   transition: 0.5s;
 }
@@ -449,7 +450,8 @@ html, body {
   position: relative;
   background-color: #ede3e8;
   border-radius: 1.5rem;
-  display: inline-block;
+  border-spacing: 0.5rem 0;
+  display: table-cell;
   width: 28rem;
   border: 0;
   text-align: center;
